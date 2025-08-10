@@ -1,6 +1,6 @@
 # Attract Plus AppImage Build
 
-Builds [AttractPlus](https://github.com/oomek/attractplus/) into an AppImage. Use case is to run Attract Mode on a Steam Deck and use it to launch MAME, which is installed as a FlatPak.
+Builds [Attract-Mode Plus](https://github.com/oomek/attractplus/) into an AppImage. Use case is to run Attract Mode on a Steam Deck and use it to launch MAME, which is installed as a FlatPak.
 
 ## Building
 
@@ -38,6 +38,7 @@ So, in mame.ini:
 |--------------|--------------------|
 |unevenstretchy|0                   |
 |bgfx_path     |/home/deck/mame/bgfx|
+|bgfx_backend  |vulkan              |s
 |video         |bgfx                |
 |waitvsync     |1                   |
 |syncrefresh   |1                   |
