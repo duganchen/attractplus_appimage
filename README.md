@@ -1,4 +1,4 @@
-# Attract Plus AppImage Build
+# Attract-Mode Plus AppImage Build
 
 Builds [Attract-Mode Plus](https://github.com/oomek/attractplus/) into an AppImage. Use case is to run Attract Mode on a Steam Deck and use it to launch MAME, which is installed as a FlatPak.
 
