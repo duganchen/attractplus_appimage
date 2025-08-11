@@ -6,7 +6,7 @@ apt update
 apt-get -y upgrade
 apt install -y wget build-essential pkg-config cmake libavformat-dev libswscale-dev libgl-dev libxrandr-dev \
     libxcursor-dev libxi-dev libudev-dev libfreetype-dev libvorbis-dev libflac-dev libexpat1-dev libglu1-mesa-dev \
-    libopenal-dev libboost-filesystem-dev file
+    libopenal-dev libboost-filesystem-dev libva-dev file
 
 rm -rf /attractplus_appimage/work
 mkdir /attractplus_appimage/work
@@ -15,7 +15,7 @@ wget --content-disposition https://github.com/oomek/attractplus/archive/refs/tag
 tar xf attractplus-3.1.2.tar.gz
 cd attractplus-3.1.2
 mkdir -p /attractplus_appimage/work/attractplus.AppDir/usr/share/{applications,pixmaps}
-make prefix=/usr DATA_PATH=../share FE_HWACCEL_VAAPI=1 FE_HWACCEL_VDPAU=1
+make prefix=/usr DATA_PATH=../share FE_HWACCEL_VAAPI=1
 make prefix=/attractplus_appimage/work/attractplus.AppDir/usr install
 cp -v util/icon.png /attractplus_appimage/work/attractplus.AppDir/usr/share/pixmaps/attractplus.png
 cp -v /attractplus_appimage/attractplus.desktop \

@@ -21,7 +21,7 @@ Have $HOME/mame/mame as a script to start MAME:
 
 If you do it correctly, then Attract Mode will detect MAME.
 
-## Setup
+## My Setup
 
 Setting up both MAME and Attract Mode is a journey, and I'm not going to repeat all of the YouTube videos that are out there.
 
@@ -34,14 +34,15 @@ Copy /var/lib/flatpak/app/org.mamedev.MAME/x86_64/stable/active/files/share/mame
 
 So, in mame.ini:
 
-|setting       |value               |
-|--------------|--------------------|
-|unevenstretchy|0                   |
-|bgfx_path     |/home/deck/mame/bgfx|
-|bgfx_backend  |vulkan              |s
-|video         |bgfx                |
-|waitvsync     |1                   |
-|syncrefresh   |1                   |
+|setting           |value               |
+|------------------|--------------------|
+|unevenstretchy    |0                   |
+|bgfx_path         |/home/deck/mame/bgfx|
+|bgfx_backend      |vulkan              |
+|bgfx_screen_chains|crt-geom            |
+|video             |bgfx                |
+|waitvsync         |1                   |
+|syncrefresh       |1                   |
 
 For Attract Mode, set up art paths and filtering. You shouldn't have trouble ending up with something that looks at least
 as good as this:
@@ -53,8 +54,6 @@ I started by following this guide:
 [Attract Mode Clean Setup - Adding Global Filters, Emulators & Artworks](https://youtu.be/PQm86NRnpdw?si=x13xSEN1XFhBn3Cc)
 
 I use the Nevato frontend.
-
-I've found that VA-API acceleration doesn't actually work, so I leave it off.
 
 ### Controls
 
