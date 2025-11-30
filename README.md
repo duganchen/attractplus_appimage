@@ -59,7 +59,7 @@ I use the Nevato frontend.
 
 My preferred setup is to have the gamepad controls as normal gamepad controls, and the right trackpad as
 it would be in a mouse/keyboard setup. This also works well for other emulators that use both the gamepad and
-mouse, such as Nintendo DS emulators. One way to achieve it is to start with the Gamepad with Mouse Trackpad
+mouse, such as Nintendo DS emulators. One way to achieve it is to start with the Gamepad with Mouse Trackpad layout
 and then bind Right Trackpad Click to Left Mouse Click.
 
 Going through this video, I rebound the following controls in Attract mode (keeping in mind that the Steam Deck
