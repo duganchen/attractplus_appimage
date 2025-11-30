@@ -30,7 +30,7 @@ bgfx shader. Here's one good shader guide:
 
 https://mameonmacs.blogspot.com/2016/01/getting-video-retro-effect-on-lcd.html
 
-Copy /var/lib/flatpak/app/org.mamedev.MAME/x86_64/stable/active/files/share/mame/bgfx to ~/mame so that you can modify it.
+Copy /var/lib/flatpak/app/org.mamedev.MAME/x86_64/stable/active/files/share/mame/bgfx to ~/.mame so that you can modify it.
 
 So, in mame.ini:
 
