@@ -2,6 +2,8 @@
 
 set -e
 
+VERSION=${VERSION:-3.2.0}
+
 apt update
 apt-get -y upgrade
 apt install -y wget build-essential pkg-config cmake libavformat-dev libswscale-dev libgl-dev libxrandr-dev \
@@ -11,9 +13,9 @@ apt install -y wget build-essential pkg-config cmake libavformat-dev libswscale-
 rm -rf /attractplus_appimage/work
 mkdir /attractplus_appimage/work
 cd /attractplus_appimage/work
-wget --content-disposition https://github.com/oomek/attractplus/archive/refs/tags/3.1.2.tar.gz
-tar xf attractplus-3.1.2.tar.gz
-cd attractplus-3.1.2
+wget --content-disposition "https://github.com/oomek/attractplus/archive/refs/tags/${VERSION}.tar.gz"
+tar xf "attractplus-${VERSION}.tar.gz"
+cd "attractplus-${VERSION}"
 mkdir -p /attractplus_appimage/work/attractplus.AppDir/usr/share/{applications,pixmaps}
 make prefix=/usr DATA_PATH=../share FE_HWACCEL_VAAPI=1
 make prefix=/attractplus_appimage/work/attractplus.AppDir/usr install
